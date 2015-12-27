@@ -1,0 +1,1794 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/new.js"></script>
+    <script type="text/javascript" src="js/to-top.js"></script>
+</head>
+<!--<body onload="document.getElementById('kw').focus()">-->
+
+<body class="s-manhattan-index">
+    <div id="wrapper">
+        <div class="s-skin-container s-isindex-wrap"></div>
+        <div id="head">
+            <!--顶部-->
+            <div class="s-top-wrap" id="s_top_wrap" style="left: 0;">
+                <div class="s-center-box"></div>
+            </div>
+            <!--顶部左侧-->
+            <div class="s-upfunc-menus" id="s_upfunc_menus">
+                <!--天气栏-->
+                <div class="s-weather-wrapper">
+                    <div class="s-mod-weather s-isindex-wrap hide-unknown-city">
+                        <div class="weather-mod">
+                            <a href="" class="city-weather">
+                                <div class="show-weather">
+                                    <span class="show-city">
+        								<em class="show-city-name">西安：</em>
+        							</span>
+                                    <span class="show-icon">
+        								<span class="weather-icon"></span>
+                                    <em>15℃</em>
+                                    </span>
+                                    <span class="show-temp"></span>
+                                </div>
+                                <div class="show-pollution">
+                                    <span class="show-airParm polution-name">
+        								<em class="show-pollution-name">良</em>
+        								<em class="show-pollution-num">70</em>
+        							</span>
+                                    <span class="show-vertical">|</span>
+                                </div>
+                            </a>
+                            <!--hover后显示的内容-->
+                            <div id="s_mod_setweather" class="s-mod-weather show-content hide-warning hide">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--换肤栏-->
+                <div class="s-icons" id="s_icons">
+                    <a href="" class="s-treasure">宝箱</a>
+                    <a href="" class="s-skin">换肤</a>
+                    <a href="" class="s-msg">消息</a>
+                </div>
+            </div>
+            <!--顶部右侧-->
+            <div class="s-isindex-wrap s-sp-menu" id="u_sp">
+                <a href="http://news.baidu.com" name="tj_trnews" class="mnav">新闻</a>
+                <a href="http://www.hao123.com" name="tj_trhao123" class="mnav">hao123</a>
+                <a href="http://map.baidu.com" name="tj_trmap" class="mnav">地图</a>
+                <a href="http://v.baidu.com" name="tj_trvideo" class="mnav">视频</a>
+                <a href="http://tieba.baidu.com" name="tj_trtieba" class="mnav">贴吧</a>
+                <a href="" class="s-user-name-top" id="s_username_top">
+                    <span class="user-name">蜂蜜</span>
+                </a>
+                <a href="" class="pf s-user-setting-top" id="s_usersetting_top">
+                    <span class="setting-text">设置</span>
+                </a>
+                <div id="setting-menu" class="inindex-wrap menu-top user-set-menu"></div>
+                <a href="http://www.baidu.com/more/" class="s-bri">更多产品</a>
+                <!--user下拉内容-->
+                <div id="s_user_name_menu" class="s-isindex-wrap s-user-set-menu  menu-top" style="right: 128px;display: none;">
+                    <div>
+                        <a href="">我的VIP</a>
+                        <a href="">个人中心</a>
+                        <a href="">账号设置</a>
+                        <a href="">意见反馈</a>
+                        <a href="">退出</a>
+                    </div>
+                    <span class="menu-arrow">
+							<em></em>
+						</span>
+                </div>
+                <!--设置下拉内容-->
+                <div class="bdpfmenu" style="right:80px;top: 37px; display: none;">
+                    <div class="bdnuarrow">
+                        <em></em>
+                        <i></i>
+                    </div>
+                    <a href="">搜索设置</a>
+                    <a href="" target="_blank">高级搜索</a>
+                    <a href="">关闭预测</a>
+                    <a href="">搜索历史</a>
+                </div>
+                <!--更多产品下拉内容-->
+                <div class="s-bdnuarrow s-bdbriarrow" style="display: none;"></div>
+                <div class="s-bdbri s-bdbriimg" style="opacity: 1;min-height: 600px;display: none;">
+                    <div class="s-bdmainlink">
+                        <div class="s-bdbriimgtitle">更多产品</div>
+                        <div class="s-briscrollwrapperContainer">
+                            <!--内容-->
+                            <div class="s-briscrollwrapper s-bdbriscroll-ctrl-content s-bdbriscroll-onwheel" style="height: auto;">
+                                <div class="s-bdbriwrapper">
+                                    <a href="">
+                                        <img src="images/nuomi_version1.png?__inline" />糯米
+                                    </a>
+                                    <a href="">
+                                        <img src="images/zhidao.png?__inline" />知道
+                                    </a>
+                                    <a href="">
+                                        <img src="images/music.png?__inline" />音乐
+                                    </a>
+                                    <a href="">
+                                        <img src="images/image.png?__inline" />图片
+                                    </a>
+                                    <a href="">
+                                        <img src="images/wenku.png?__inline" />文库
+                                    </a>
+                                    <a href="">
+                                        <img src="images/bang.png?__inline" />风云榜
+                                    </a>
+                                    <a href="">
+                                        <img src="images/tuiguang.png?__inline" />百度推广
+                                    </a>
+                                    <div class="s-bdbrievenmore">
+                                        <a href="">全部产品>></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--滚动轴-->
+                            <div class="s-bdbriscroll-ctrl-scroll bdriscroll-ctrl-scroll-hover bdriscroll-ctrl-scroll-touch" style="height: 172px;display: block;">
+                                <div class="s-bdbriscroll-axis" style="height: 172px;"></div>
+                                <div class="s-bdbriscroll-slider op-log-btn" style="display: block; height: 50px;top: 0px;">
+                                    <div class="s-bdbriscroll-s-top"></div>
+                                    <div class="s-bdbriscroll-s-bottom"></div>
+                                    <div class="s-bdbriscroll-s-block"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!--百度logo和搜索框-->
+            <div id="head_wrapper" class="head-wrapper s-title-img" style="display: block;">
+                <!-- 中间部分 -->
+                <div class="s-form" id="s_fm">
+                    <div class="s-form-wrapper" id="s_form_wrapper">
+                        <div id="lg" class="s-p-top">
+                            <img src="images/bd_logo1.png?__inline" alt="百度logo" width="270" height="129">
+                        </div>
+                        <a href="" id="result_logo" onmousedown="">
+                            <img src="images/baidu_jgylogo3.gif?__inline" alt="到百度首页" />
+                        </a>
+                        <form id="form" class="fm">
+                            <span class="s-ipt-wr qw">
+								<input id="kw" class="s-ipt" value maxlength="255" autocomplete="off">
+							</span>
+                            <span class="s-btn-wr bg btn-wr" id="s_btn_wr">
+								<input type="submit" id="su" value="百度一下" class="s-btn">
+							</span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--主要内容部分-->
+            <div id="s_wrap" class="s-isindex-wrap" style="padding-top: 0;">
+                <!--主体部分-->
+                <div id="s_main" class="main clearfix">
+                    <div id="s_mancard_main" class="s-mancard-main">
+                        <!--导航栏-->
+                        <div class="s-menu-container">
+                            <div id="s_menu_gurd" class="s-menu-gurd" style="margin-top: 0;">
+                                <div id="s_ctner_menus" class="s-ctner-menus">
+                                    <span id="s_menu_mine" class="s-menu-item s-menu-mine">
+											<div class="mine-icon"></div>
+											<div class="mine-text">我的关注</div>
+										</span>
+                                    <div class="s-menus-outer">
+                                        <div id="s_menus_wrapper" class="menus-wrapper">
+                                            <span class="s-menu-item current">推荐</span>
+                                            <span class="s-menu-item">导航</span>
+                                            <span class="s-menu-item">视频</span>
+                                            <span class="s-menu-item">购物</span>
+                                        </div>
+                                        <div class="s-bg-space"></div>
+                                    </div>
+                                    <span id="s_ctner_set" class="s-menu-setting">
+											<div class="menu-icon"></div>
+										</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--内容部分-->
+                        <div id="s_ctner_contents" class="s-ctner-contents s-opacity-white-bg">
+                            <!--推荐下的内容-->
+                            <div id="s_content_2" class="s-content" style="display: block;">
+                                <div id="s_xmancard_news" class="s-xmancard-news s-xmancard">
+                                    <div class="s-news-wrapper clearfix">
+                                        <!--右侧固定栏实时热点-->
+                                        <div class="s-news-rank-wrapper" style="position: absolute; top: 0; right:5px;">
+                                            <div class="s-rank-title s-opacity-border1-bottom">
+                                                <div class="title-text">
+                                                    <a href="">实时热点</a>
+                                                </div>
+                                                <div class="hot-refresh">
+                                                    <span class="hot-refresh-icon"></span>
+                                                    <span class="hot-refresh-text">换一换</span>
+                                                </div>
+                                            </div>
+                                            <ul class="s-news-rank-content">
+                                                <li class="news-meta-item">
+                                                    <em class="news-icon"></em>
+                                                    <span class="news-title">
+															<span class="title-link">
+																<a href="" class="title-content">金巧巧回应质疑</a>
+																<span class="new-identity"></span>
+                                                    </span>
+                                                    </span>
+                                                </li>
+                                                <li class="news-meta-item">
+                                                    <em class="news-icon"></em>
+                                                    <span class="news-title">
+															<span class="title-link">
+																<a href="" class="title-content">妹子偶遇巨型蜘蛛</a>
+																<span class="new-identity"></span>
+                                                    </span>
+                                                    </span>
+                                                </li>
+                                                <li class="news-meta-item">
+                                                    <em class="news-icon"></em>
+                                                    <span class="news-title">
+															<span class="title-link">
+																<a href="" class="title-content">金巧巧回应质疑</a>
+																<span class="new-identity"></span>
+                                                    </span>
+                                                    </span>
+                                                </li>
+                                                <li class="news-meta-item">
+                                                    <em class="news-icon"></em>
+                                                    <span class="news-title">
+															<span class="title-link">
+																<a href="" class="title-content">金巧巧回应质疑</a>
+																<span class="new-identity"></span>
+                                                    </span>
+                                                    </span>
+                                                </li>
+                                                <li class="news-meta-item">
+                                                    <em class="news-icon"></em>
+                                                    <span class="news-title">
+															<span class="title-link">
+																<a href="" class="title-content">金巧巧回应质疑</a>
+																<span class="new-identity"></span>
+                                                    </span>
+                                                    </span>
+                                                </li>
+                                                <li class="news-meta-item">
+                                                    <em class="news-icon"></em>
+                                                    <span class="news-title">
+															<span class="title-link">
+																<a href="" class="title-content">金巧巧回应质疑</a>
+																<span class="new-identity"></span>
+                                                    </span>
+                                                    </span>
+                                                </li>
+                                                <li class="news-meta-item">
+                                                    <em class="news-icon"></em>
+                                                    <span class="news-title">
+															<span class="title-link">
+																<a href="" class="title-content">金巧巧回应质疑</a>
+																<span class="new-identity"></span>
+                                                    </span>
+                                                    </span>
+                                                </li>
+                                                <li class="news-meta-item">
+                                                    <em class="news-icon"></em>
+                                                    <span class="news-title">
+															<span class="title-link">
+																<a href="" class="title-content">金巧巧回应质疑</a>
+																<span class="new-identity"></span>
+                                                    </span>
+                                                    </span>
+                                                </li>
+                                                <li class="news-meta-item">
+                                                    <em class="news-icon"></em>
+                                                    <span class="news-title">
+															<span class="title-link">
+																<a href="" class="title-content">金巧巧回应质疑</a>
+																<span class="new-identity"></span>
+                                                    </span>
+                                                    </span>
+                                                </li>
+                                                <li class="news-meta-item">
+                                                    <em class="news-icon"></em>
+                                                    <span class="news-title">
+															<span class="title-link">
+																<a href="" class="title-content">金巧巧回应质疑</a>
+																<span class="new-identity"></span>
+                                                    </span>
+                                                    </span>
+                                                </li>
+                                                <li class="news-meta-item">
+                                                    <em class="news-icon"></em>
+                                                    <span class="news-title">
+															<span class="title-link">
+																<a href="" class="title-content">金巧巧回应质疑</a>
+																<span class="new-identity"></span>
+                                                    </span>
+                                                    </span>
+                                                </li>
+                                                <li class="news-meta-item">
+                                                    <em class="news-icon"></em>
+                                                    <span class="news-title">
+															<span class="title-link">
+																<a href="" class="title-content">金巧巧回应质疑</a>
+																<span class="new-identity"></span>
+                                                    </span>
+                                                    </span>
+                                                </li>
+                                                <li class="news-meta-item">
+                                                    <em class="news-icon"></em>
+                                                    <span class="news-title">
+															<span class="title-link">
+																<a href="" class="title-content">金巧巧回应质疑</a>
+																<span class="new-identity"></span>
+                                                    </span>
+                                                    </span>
+                                                </li>
+                                                <li class="news-meta-item">
+                                                    <em class="news-icon"></em>
+                                                    <span class="news-title">
+															<span class="title-link">
+																<a href="" class="title-content">金巧巧回应质疑</a>
+																<span class="new-identity"></span>
+                                                    </span>
+                                                    </span>
+                                                </li>
+                                                <li class="news-meta-item">
+                                                    <em class="news-icon"></em>
+                                                    <span class="news-title">
+															<span class="title-link">
+																<a href="" class="title-content">金巧巧回应质疑</a>
+																<span class="new-identity"></span>
+                                                    </span>
+                                                    </span>
+                                                </li>
+                                                <li class="news-meta-item">
+                                                    <em class="news-icon"></em>
+                                                    <span class="news-title">
+															<span class="title-link">
+																<a href="" class="title-content">金巧巧回应质疑</a>
+																<span class="new-identity"></span>
+                                                    </span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--上侧提示栏-->
+                                        <div class="news-flash-tips">
+                                            <div class="left-line s-opacity-blank8"></div>
+                                            <div class="tips-content">
+                                                <div class="tips-icon"></div>
+                                                <span>以下信息根据您的兴趣推荐</span>
+                                            </div>
+                                            <div class="right-line s-opacity-blank8"></div>
+                                        </div>
+                                        <!--中间内容栏-->
+                                        <div class="water-container" id="s_con2_container">
+                                            <div class="s-news-list-wrapper">
+                                                <div class="s-news-item s-news-item-tp1-2 s-opacity-blank8 first">
+                                                    <div class="s-text-content">
+                                                        <h2>
+																<a href="" class="s-yahei">
+																	<span class="status prefix-0"></span>
+																	中甲-华夏2-0贵州豪取7连胜 末轮获平局即冲超
+																</a>
+															</h2>
+                                                    </div>
+                                                    <div class="s-pic-content">
+                                                        <ul class="s-news-content-imgs clearfix">
+                                                            <li class="item-img-wrap">
+                                                                <a href="">
+                                                                    <img src="images/u=508596686,4173892859&fm=80.png?__inline" style="width: 176px; height: 106px;" />
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="form">
+                                                        <span class="src-net">
+																<a href="">网易体育</a>
+															</span>
+                                                        <span class="src-time">10-24 16:42</span>
+                                                    </div>
+                                                </div>
+                                                <div class="s-news-item s-news-item-tp1-2 s-opacity-blank8">
+                                                    <div class="s-text-content">
+                                                        <h2>
+																<a href="" class="s-yahei">
+																	<span class="status prefix-0"></span>
+																	奇葩小偷指认现场时赋诗：我从秋风锁江南
+																</a>
+															</h2>
+                                                    </div>
+                                                    <div class="s-pic-content">
+                                                        <ul class="s-news-content-imgs clearfix">
+                                                            <li class="item-img-wrap">
+                                                                <a href="">
+                                                                    <img src="images/u=3636601308,1611419747&fm=80.jpg" style="width: 176px; height: 106px;" />
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="form">
+                                                        <span class="src-net">
+																<a href="">网易财经</a>
+															</span>
+                                                        <span class="src-time">10-24 10:42</span>
+                                                    </div>
+                                                </div>
+                                                <div class="s-news-item s-news-item-tp1-2 s-opacity-blank8">
+                                                    <div class="s-text-content">
+                                                        <h2>
+																<a href="" class="s-yahei">
+																	<span class="status prefix-0"></span>
+																	中国游客在大马沙滩裸拍事件续：警方加速完成调查
+																</a>
+															</h2>
+                                                    </div>
+                                                    <div class="s-pic-content">
+                                                        <ul class="s-news-content-imgs clearfix">
+                                                            <li class="item-img-wrap">
+                                                                <a href="">
+                                                                    <img src="images/u=1585612741,2474206152&fm=80.jpg" style="width: 176px; height: 106px;" />
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="form">
+                                                        <span class="src-net">
+																<a href="">网易体育</a>
+															</span>
+                                                        <span class="src-time">10-24 16:42</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="s-news-list-wrapper">
+                                                <div class="s-news-item s-news-item-tp1-2 s-opacity-blank8 first">
+                                                    <div class="s-text-content">
+                                                        <h2>
+																<a href="" class="s-yahei">
+																	报告：51.4%中国留学生回国发展，最青睐民企
+																</a>
+															</h2>
+                                                    </div>
+                                                    <div class="s-pic-content">
+                                                        <ul class="s-news-content-imgs clearfix">
+                                                            <li class="item-img-wrap">
+                                                                <a href="">
+                                                                    <img src="images/u=4135016116,251360625&fm=80.jpg" style="width: 176px; height: 106px;" />
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="form">
+                                                        <span class="src-net">
+																<a href="">新浪财经</a>
+															</span>
+                                                        <span class="src-time">10-24 16:42</span>
+                                                    </div>
+                                                </div>
+                                                <div class="s-news-item s-news-item-tp1-2 s-opacity-blank8">
+                                                    <div class="s-text-content">
+                                                        <h2>
+																<a href="" class="s-yahei">
+																	西班牙服装巨子成最新世界首富
+																</a>
+															</h2>
+                                                    </div>
+                                                    <div class="s-pic-content">
+                                                        <ul class="s-news-content-imgs clearfix">
+                                                            <li class="item-img-wrap">
+                                                                <a href="">
+                                                                    <img src="images/u=1449992554,3739484622&fm=80.jpg" style="width: 176px; height: 106px;" />
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="form">
+                                                        <span class="src-net">
+																<a href="">网易财经</a>
+															</span>
+                                                        <span class="src-time">10-24 10:42</span>
+                                                    </div>
+                                                </div>
+                                                <div class="s-news-item s-news-item-tp1-2 s-opacity-blank8">
+                                                    <div class="s-text-content">
+                                                        <h2>
+																<a href="" class="s-yahei">
+																	胡歌又有新戏了，这次终于不用被虐了
+																</a>
+															</h2>
+                                                    </div>
+                                                    <div class="s-pic-content">
+                                                        <ul class="s-news-content-imgs clearfix">
+                                                            <li class="item-img-wrap">
+                                                                <a href="">
+                                                                    <img src="images/u=1084863613,865686314&fm=80.jpg" style="width: 176px; height: 106px;" />
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="form">
+                                                        <span class="src-net">
+																<a href="">凤凰娱乐</a>
+															</span>
+                                                        <span class="src-time">10-24 16:42</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--视频下的内容-->
+                            <div id="s_content_15" class="s-content" style="display: none;">
+                                <div id="s_xmancard_video" class="s-xmancard s-xmancard-video">
+                                    <div>
+                                        <div class="water-container">
+                                            <div class="s-video-wrapper clearfix">
+                                                <div class="video-col clearfix">
+                                                    <div class="item-wrapper">
+                                                        <div class="video-item video-item-1">
+                                                            <div class="v-pic v-pic-1 pic-hover">
+                                                                <!--删除图标-->
+                                                                <div class="dustbin"></div>
+                                                                <a href="" class="pic">
+                                                                    <img src="images/zhuazhucaihong.jpg" class="img" width="195px" height="267px" />
+                                                                </a>
+                                                                <div class="black"></div>
+                                                                <a href="" class="bg img-click"></a>
+                                                                <a href="" class="img-click">
+                                                                    <span class="v-tag">35集全</span>
+                                                                </a>
+                                                                <!--右上角电视剧图片-->
+                                                                <a href="" class="img-click tag-sort tag-sort3"></a>
+                                                            </div>
+                                                            <div class="v-txt s-opacity-bg s-opacity-blank3">
+                                                                <div class="text">
+                                                                    <a href="" class="s-opacity-blank3">抓住彩虹的男人</a>
+                                                                </div>
+                                                                <div class="score">
+                                                                    <span class="score-star">
+																			<span class="star-active" style="width: 29.9px;"></span>
+                                                                    </span>
+                                                                    4.6
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="video-col clearfix">
+                                                    <div class="item-wrapper">
+                                                        <div class="video-item video-item-1">
+                                                            <div class="v-pic v-pic-1 pic-hover">
+                                                                <!--删除图标-->
+                                                                <div class="dustbin"></div>
+                                                                <a href="" class="pic">
+                                                                    <img src="images/woganshuo.jpg" class="img" width="195px" height="267px" />
+                                                                </a>
+                                                                <div class="black"></div>
+                                                                <a href="" class="bg img-click"></a>
+                                                                <a href="" class="img-click">
+                                                                    <span class="v-tag">10-21期</span>
+                                                                </a>
+                                                                <!--右上角电视剧图片-->
+                                                                <a href="" class="img-click tag-sort tag-sort2"></a>
+                                                            </div>
+                                                            <div class="v-txt s-opacity-bg s-opacity-blank3">
+                                                                <div class="text">
+                                                                    <a href="" class="s-opacity-blank3">金星脱口秀</a>
+                                                                </div>
+                                                                <div class="score">
+                                                                    <span class="score-star">
+																			<span class="star-active" style="width: 41.6px;"></span>
+                                                                    </span>
+                                                                    6.4
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="video-col clearfix">
+                                                    <div class="item-wrapper">
+                                                        <div class="video-item video-item-2">
+                                                            <div class="v-pic v-pic-2 pic-hover">
+                                                                <div class="dustbin"></div>
+                                                                <a href="" class="pic">
+                                                                    <img src="images/nanjingbaoma.jpg" width="195px" height="101px" />
+                                                                </a>
+                                                                <div class="black"></div>
+                                                                <a href="" class="bg img-click"></a>
+                                                                <a href="" class="img-click">
+                                                                    <span class="v-tag">01:44</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="v-txt s-opacity-bg1 s-opacity-blank3">
+                                                                <div class="text">
+                                                                    <a href="" class="s-opacity-blank3">南京宝马案现场白色粉末排除常见毒品 成分未知</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item-wrapper">
+                                                        <div class="video-item video-item-2">
+                                                            <div class="v-pic v-pic-2 pic-hover">
+                                                                <div class="dustbin"></div>
+                                                                <a href="" class="pic">
+                                                                    <img src="images/zhanglang.jpg" width="195px" height="101px" />
+                                                                </a>
+                                                                <div class="black"></div>
+                                                                <a href="" class="bg img-click"></a>
+                                                                <a href="" class="img-click">
+                                                                    <span class="v-tag">01:32</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="v-txt s-opacity-bg1 s-opacity-blank3">
+                                                                <div class="text">
+                                                                    <a href="" class="s-opacity-blank3">男子用浓硫酸熏蟑螂 致邻居出现身体不适</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="video-col clearfix">
+                                                    <div class="item-wrapper">
+                                                        <div class="video-item video-item-2">
+                                                            <div class="v-pic v-pic-2 pic-hover">
+                                                                <div class="dustbin"></div>
+                                                                <a href="" class="pic">
+                                                                    <img src="images/dahaoshig.jpg" width="195px" height="101px" />
+                                                                </a>
+                                                                <div class="black"></div>
+                                                                <a href="" class="bg img-click"></a>
+                                                                <a href="" class="img-click">
+                                                                    <span class="v-tag">02:14</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="v-txt s-opacity-bg1 s-opacity-blank3">
+                                                                <div class="text">
+                                                                    <a href="" class="s-opacity-blank3">大好时光第20集预告片</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item-wrapper">
+                                                        <div class="video-item video-item-2">
+                                                            <div class="v-pic v-pic-2 pic-hover">
+                                                                <div class="dustbin"></div>
+                                                                <a href="" class="pic">
+                                                                    <img src="images/bijini.jpg" width="195px" height="101px" />
+                                                                </a>
+                                                                <div class="black"></div>
+                                                                <a href="" class="bg img-click"></a>
+                                                                <a href="" class="img-click">
+                                                                    <span class="v-tag">03:32</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="v-txt s-opacity-bg1 s-opacity-blank3">
+                                                                <div class="text">
+                                                                    <a href="" class="s-opacity-blank3">比基尼大妞卧姿射AK-47 屁股跟着后坐力晃动</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="video-col-line s-opacity-border4-top"></div>
+                                                <div class="clearfloat"></div>
+                                            </div>
+                                            <div class="s-video-wrapper clearfix">
+                                                <div class="video-col clearfix">
+                                                    <div class="item-wrapper">
+                                                        <div class="video-item video-item-1">
+                                                            <div class="v-pic v-pic-1 pic-hover">
+                                                                <!--删除图标-->
+                                                                <div class="dustbin"></div>
+                                                                <a href="" class="pic">
+                                                                    <img src="images/langquan.jpg" class="img" width="195px" height="267px" />
+                                                                </a>
+                                                                <div class="black"></div>
+                                                                <a href="" class="bg img-click"></a>
+                                                                <a href="" class="img-click">
+                                                                    <span class="v-tag">97:56</span>
+                                                                </a>
+                                                                <!--右上角电视剧图片-->
+                                                                <a href="" class="img-click tag-sort tag-sort4"></a>
+                                                            </div>
+                                                            <div class="v-txt s-opacity-bg s-opacity-blank3">
+                                                                <div class="text">
+                                                                    <a href="" class="s-opacity-blank3">狼犬历险记</a>
+                                                                </div>
+                                                                <div class="score">
+                                                                    <span class="score-star">
+																			<span class="star-active" style="width: 51.35px;"></span>
+                                                                    </span>
+                                                                    7.9
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="video-col clearfix">
+                                                    <div class="item-wrapper">
+                                                        <div class="video-item video-item-1">
+                                                            <div class="v-pic v-pic-1 pic-hover">
+                                                                <!--删除图标-->
+                                                                <div class="dustbin"></div>
+                                                                <a href="" class="pic">
+                                                                    <img src="images/yaojing.jpg" class="img" width="195px" height="267px" />
+                                                                </a>
+                                                                <div class="black"></div>
+                                                                <a href="" class="bg img-click"></a>
+                                                                <a href="" class="img-click">
+                                                                    <span class="v-tag">更新至256集</span>
+                                                                </a>
+                                                                <!--右上角电视剧图片-->
+                                                                <a href="" class="img-click tag-sort tag-sort1"></a>
+                                                            </div>
+                                                            <div class="v-txt s-opacity-bg s-opacity-blank3">
+                                                                <div class="text">
+                                                                    <a href="" class="s-opacity-blank3">妖精的尾巴</a>
+                                                                </div>
+                                                                <div class="score">
+                                                                    <span class="score-star">
+																			<span class="star-active" style="width:53.3px;"></span>
+                                                                    </span>
+                                                                    8.2
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="video-col clearfix">
+                                                    <div class="item-wrapper">
+                                                        <div class="video-item video-item-2">
+                                                            <div class="v-pic v-pic-2 pic-hover">
+                                                                <div class="dustbin"></div>
+                                                                <a href="" class="pic">
+                                                                    <img src="images/shipai.jpg" width="195px" height="101px" />
+                                                                </a>
+                                                                <div class="black"></div>
+                                                                <a href="" class="bg img-click"></a>
+                                                                <a href="" class="img-click">
+                                                                    <span class="v-tag">01:44</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="v-txt s-opacity-bg1 s-opacity-blank3">
+                                                                <div class="text">
+                                                                    <a href="" class="s-opacity-blank3">实拍：男子60秒单手捏碎12个苹果 吓坏网友</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item-wrapper">
+                                                        <div class="video-item video-item-2">
+                                                            <div class="v-pic v-pic-2 pic-hover">
+                                                                <div class="dustbin"></div>
+                                                                <a href="" class="pic">
+                                                                    <img src="images/laoren.jpg" width="195px" height="101px" />
+                                                                </a>
+                                                                <div class="black"></div>
+                                                                <a href="" class="bg img-click"></a>
+                                                                <a href="" class="img-click">
+                                                                    <span class="v-tag">01:44</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="v-txt s-opacity-bg1 s-opacity-blank3">
+                                                                <div class="text">
+                                                                    <a href="" class="s-opacity-blank3">老人当街辱骂掌掴学生致其下跪 已被拘留</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="video-col clearfix">
+                                                    <div class="item-wrapper">
+                                                        <div class="video-item video-item-2">
+                                                            <div class="v-pic v-pic-2 pic-hover">
+                                                                <div class="dustbin"></div>
+                                                                <a href="" class="pic">
+                                                                    <img src="images/dahaoshig.jpg" width="195px" height="101px" />
+                                                                </a>
+                                                                <div class="black"></div>
+                                                                <a href="" class="bg img-click"></a>
+                                                                <a href="" class="img-click">
+                                                                    <span class="v-tag">02:23</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="v-txt s-opacity-bg1 s-opacity-blank3">
+                                                                <div class="text">
+                                                                    <a href="" class="s-opacity-blank3">也门战乱：六岁男孩哭喊“别埋掉我”后死亡</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item-wrapper">
+                                                        <div class="video-item video-item-2">
+                                                            <div class="v-pic v-pic-2 pic-hover">
+                                                                <div class="dustbin"></div>
+                                                                <a href="" class="pic">
+                                                                    <img src="images/mengaoli.jpg" width="195px" height="101px" />
+                                                                </a>
+                                                                <div class="black"></div>
+                                                                <a href="" class="bg img-click"></a>
+                                                                <a href="" class="img-click">
+                                                                    <span class="v-tag">03:32</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="v-txt s-opacity-bg1 s-opacity-blank3">
+                                                                <div class="text">
+                                                                    <a href="" class="s-opacity-blank3">萌神奥莉4连拍 精灵可爱任性做鬼脸</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfloat"></div>
+                                            </div>
+                                            <div class="clearfloat"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--我的关注下的内容-->
+                            <div id="s_content_100" class="s-content" style="display: none;">
+                                <div class="s-xmancard-mine s-xmancard">
+                                    <div class="s-mine-wrapper clearfix">
+                                        <div class="s-code-blocks s-block-nav">
+                                            <div class="s-block-container">
+                                                <div class="s-mblock-title s-opacity-border4-bottom">
+                                                    <div class="title-content">
+                                                        <span class="mine-title">
+																<div class="mine-title-icon">
+																	<em></em>
+																</div>
+																<span class="mine-title-text">我的导航</span>
+                                                        <span class="mine-title-num">
+																	(<span>0</span>)
+                                                        </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="s-setbar" style="display: none;">
+                                                        <div class="set-bar-content">
+                                                            <div class="set-menu blank-menu">
+                                                                <div class="set-btn set-add">添加</div>
+                                                                <div class="set-btn fanli-class classed">
+                                                                    <span class="class-icon"></span>
+                                                                    <span>返利模式</span>
+                                                                </div>
+                                                                <div class="set-btn set-totop" style="color: rgb(153,153,153);">置顶</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="s-mblock-content s-opacity-blank3 block-blank block-nav-fanli">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tips-manager-area">
+                                        <div class="tips-manager-btn">
+                                            <span class="manager-btn-icon"></span>
+                                            <span class="manager-btn-text">自定义</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--导航下的内容-->
+                            <div id="s_content_1" class="s-content" style="display: none;">
+                                <div id="s_xmancard_nav" class="s-xmancard s-xmancard-nav">
+                                    <div class="nav-block-wrapper fanli-patern">
+                                        <div class="water-container">
+                                            <div class="s-nav-wrapper">
+                                                <div class="s-nav-area">
+                                                    <div class="clearfix">
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/baidunuomi.jpg" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                            <div class="rebate" style="display: none;">
+                                                                <a href="">最高返利7.50%</a>
+                                                            </div>
+                                                            <div class="fanli-tag">
+                                                                <a href=""></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/jd.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                            <div class="rebate" style="display: none;">
+                                                                <a href="">最高返利7.50%</a>
+                                                            </div>
+                                                            <div class="fanli-tag">
+                                                                <a href=""></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/1haodian.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                            <div class="rebate" style="display: none;">
+                                                                <a href="">最高返利7.50%</a>
+                                                            </div>
+                                                            <div class="fanli-tag">
+                                                                <a href=""></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/suning.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                            <div class="rebate" style="display: none;">
+                                                                <a href="">最高返利7.50%</a>
+                                                            </div>
+                                                            <div class="fanli-tag">
+                                                                <a href=""></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/vip.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                            <div class="rebate" style="display: none;">
+                                                                <a href="">最高返利7.50%</a>
+                                                            </div>
+                                                            <div class="fanli-tag">
+                                                                <a href=""></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/ddw.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                            <div class="rebate" style="display: none;">
+                                                                <a href="">最高返利7.50%</a>
+                                                            </div>
+                                                            <div class="fanli-tag">
+                                                                <a href=""></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/taob.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/58tongc.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/sina.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/souhu.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/wangyi.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/tuting.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/taob.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/58tongc.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/sina.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/souhu.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/wangyi.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/tuting.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/taob.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/58tongc.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/sina.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/souhu.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/wangyi.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/tuting.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="clearfloat"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="s-nav-wrapper">
+                                                <div class="s-nav-area">
+                                                    <div class="clearfix">
+                                                        <h1>资讯信息</h1>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/cctv.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/zhongguo.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/qiche.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/renmin.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/fenghuang.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/xinhua.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/4034970a304e251fc27d8b6ea186c9177e3e5399.jpg.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/3b87e950352ac65c108f09e5fdf2b21192138a99.jpg.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/63d9f2d3572c11df615ad0b5652762d0f603c299.jpg.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/tuting.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/taob.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/58tongc.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/sina.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/souhu.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/wangyi.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/tuting.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="clearfloat"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="s-nav-wrapper">
+                                                <div class="s-nav-area">
+                                                    <div class="clearfix">
+                                                        <h1>娱乐休闲</h1>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/leshi.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/aiqiyi.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/youku.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/tudou.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/yinyue.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/xinhua.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/4034970a304e251fc27d8b6ea186c9177e3e5399.jpg.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/3b87e950352ac65c108f09e5fdf2b21192138a99.jpg.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/63d9f2d3572c11df615ad0b5652762d0f603c299.jpg.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/tuting.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="clearfloat"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="s-nav-wrapper">
+                                                <div class="s-nav-area">
+                                                    <div class="clearfix">
+                                                        <h1>购物海淘</h1>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/cctv.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/zhongguo.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/qiche.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/renmin.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/fenghuang.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/xinhua.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/4034970a304e251fc27d8b6ea186c9177e3e5399.jpg.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/3b87e950352ac65c108f09e5fdf2b21192138a99.jpg.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/63d9f2d3572c11df615ad0b5652762d0f603c299.jpg.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/tuting.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/taob.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/58tongc.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/sina.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/souhu.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/wangyi.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/tuting.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="clearfloat"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="s-nav-wrapper">
+                                                <div class="s-nav-area">
+                                                    <div class="clearfix">
+                                                        <h1>生活周边</h1>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/windows.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/ganji.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/zhilian.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/dazhong.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/12306.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/souhu.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/wangyi.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="fanli-nav nav-item">
+                                                            <a href="" class="nav-block">
+                                                                <img src="images/tuting.png?__inline" width="115" height="70" />
+                                                            </a>
+                                                            <div class="top-line"></div>
+                                                        </div>
+                                                        <div class="clearfloat"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--购物下的内容-->
+                            <div id="s_content_5" class="s-content" style="display: none;">
+                                <div id="s_xmancard_shopping" class="s-xmancard-shopping s-xmancard">
+                                    <div class="s-shopping-wrapper clearfix">
+                                        <div class="shopping-card-wrapper clearfix">
+                                            <div class="shopping-card-item">
+                                                <div class="shopping-card-imgwrapper">
+                                                    <a href="" class="img">
+                                                        <img src="images/xiaofeiyang.jpg" />
+                                                        <div class="mask" style="display: none;">
+                                                            <span class="salenum">已售 16375</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="shopping-card-text clearfix">
+                                                    <a href="" class="shopping-card-title">狮子楼单人自助涮烤</a>
+                                                    <span class="shopping-card-price">
+															<span class="price-sign">¥</span>
+                                                    <span>39</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="shopping-card-item">
+                                                <div class="shopping-card-imgwrapper">
+                                                    <a href="" class="img">
+                                                        <img src="images/kaixin.jpg" />
+                                                        <div class="mask" style="display: none;">
+                                                            <span class="salenum">已售 16375</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="shopping-card-text clearfix">
+                                                    <a href="" class="shopping-card-title">开欣食尚28元代金券</a>
+                                                    <span class="shopping-card-price">
+															<span class="price-sign">¥</span>
+                                                    <span>20</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="shopping-card-item">
+                                                <div class="shopping-card-imgwrapper">
+                                                    <a href="" class="img">
+                                                        <img src="images/hanlixuan.jpg" />
+                                                        <div class="mask" style="display: none;">
+                                                            <span class="salenum">已售 16375</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="shopping-card-text clearfix">
+                                                    <a href="" class="shopping-card-title">汉丽轩自助午餐</a>
+                                                    <span class="shopping-card-price">
+															<span class="price-sign">¥</span>
+                                                    <span>41.9</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="shopping-card-item">
+                                                <div class="shopping-card-imgwrapper">
+                                                    <a href="" class="img">
+                                                        <img src="images/qianjia.jpg" />
+                                                        <div class="mask" style="display: none;">
+                                                            <span class="salenum">已售 16375</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="shopping-card-text clearfix">
+                                                    <a href="" class="shopping-card-title">千家粗粮王单人自助套餐</a>
+                                                    <span class="shopping-card-price">
+															<span class="price-sign">¥</span>
+                                                    <span>33</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="shopping-card-item">
+                                                <div class="shopping-card-imgwrapper">
+                                                    <a href="" class="img">
+                                                        <img src="images/jinquandao.jpg" />
+                                                        <div class="mask" style="display: none;">
+                                                            <span class="salenum">已售 16375</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="shopping-card-text clearfix">
+                                                    <a href="" class="shopping-card-title">金权道45元自助午餐</a>
+                                                    <span class="shopping-card-price">
+															<span class="price-sign">¥</span>
+                                                    <span>39</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="shopping-card-item">
+                                                <div class="shopping-card-imgwrapper">
+                                                    <a href="" class="img">
+                                                        <img src="images/haoxianglai.jpg" />
+                                                        <div class="mask" style="display: none;">
+                                                            <span class="salenum">已售 16375</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="shopping-card-text clearfix">
+                                                    <a href="" class="shopping-card-title">豪享来50元代金券</a>
+                                                    <span class="shopping-card-price">
+															<span class="price-sign">¥</span>
+                                                    <span>47.5</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="shopping-card-item">
+                                                <div class="shopping-card-imgwrapper">
+                                                    <a href="" class="img">
+                                                        <img src="images/baixing.jpg" />
+                                                        <div class="mask" style="display: none;">
+                                                            <span class="salenum">已售 16375</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="shopping-card-text clearfix">
+                                                    <a href="" class="shopping-card-title">百姓厨房100代金券</a>
+                                                    <span class="shopping-card-price">
+															<span class="price-sign">¥</span>
+                                                    <span>80</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="shopping-card-item">
+                                                <div class="shopping-card-imgwrapper">
+                                                    <a href="" class="img">
+                                                        <img src="images/ronghe.jpg" />
+                                                        <div class="mask" style="display: none;">
+                                                            <span class="salenum">已售 16375</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="shopping-card-text clearfix">
+                                                    <a href="" class="shopping-card-title">蓉和小厨100元代金券</a>
+                                                    <span class="shopping-card-price">
+															<span class="price-sign">¥</span>
+                                                    <span>67</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfloat"></div>
+                                        <div class="sp-line s-opacity-blank8 sp-line-show"></div>
+                                        <div class="water-container">
+                                            <div class="clearfix">
+                                                <div class="s-index-col">
+                                                    <div class="shopping-item s-opacity-blank8 nuomi-item">
+                                                        <div style="height: 164.32px; overflow: hidden;">
+                                                            <a href="" class="img-area">
+                                                                <img src="images/xiaofeiyang1.jpg" style="width: 273px; height: 164.32px;" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <a href="" class="a-title">
+                                                                <div class="title">
+                                                                    <p>小肥羊100元代金券</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="" class="a-description">
+                                                                <div class="description">
+                                                                    <p>100元代金券！可叠加使用！提供免费WiFi！</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="price-area clearfix">
+                                                            <a href="" class="price">
+                                                                <span class="price-sign">¥</span>67
+                                                            </a>
+                                                            <span class="or-price">
+																	<span class="price-sign">¥</span>
+                                                            <span class="or-price-text">100</span>
+                                                            </span>
+                                                            <span class="sale">已售1814</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="shopping-item s-opacity-blank8 nuomi-item">
+                                                        <div style="height: 164.32px; overflow: hidden;">
+                                                            <a href="" class="img-area">
+                                                                <img src="images/xinan.jpg" style="width: 273px; height: 164.32px;" />
+                                                                <div class="tag">免预约</div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <a href="" class="a-title">
+                                                                <div class="title">
+                                                                    <p>心岸烘焙28元代金券</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="" class="a-description">
+                                                                <div class="description">
+                                                                    <p>鼎城花园店28元代金券！节假日通用，提供免费WiFi！</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="price-area clearfix">
+                                                            <a href="" class="price">
+                                                                <span class="price-sign">¥</span>18
+                                                            </a>
+                                                            <span class="or-price">
+																	<span class="price-sign">¥</span>
+                                                            <span class="or-price-text">28</span>
+                                                            </span>
+                                                            <span class="sale">已售1380</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="s-index-col">
+                                                    <div class="shopping-item s-opacity-blank8 nuomi-item">
+                                                        <div style="height: 164.32px; overflow: hidden;">
+                                                            <a href="" class="img-area">
+                                                                <img src="images/xiaofeiyang1.jpg" style="width: 273px; height: 164.32px;" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <a href="" class="a-title">
+                                                                <div class="title">
+                                                                    <p>小肥羊100元代金券</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="" class="a-description">
+                                                                <div class="description">
+                                                                    <p>100元代金券！可叠加使用！提供免费WiFi！</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="price-area clearfix">
+                                                            <a href="" class="price">
+                                                                <span class="price-sign">¥</span>67
+                                                            </a>
+                                                            <span class="or-price">
+																	<span class="price-sign">¥</span>
+                                                            <span class="or-price-text">100</span>
+                                                            </span>
+                                                            <span class="sale">已售1814</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="shopping-item s-opacity-blank8 nuomi-item">
+                                                        <div style="height: 164.32px; overflow: hidden;">
+                                                            <a href="" class="img-area">
+                                                                <img src="images/xinan.jpg" style="width: 273px; height: 164.32px;" />
+                                                                <div class="tag">免预约</div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <a href="" class="a-title">
+                                                                <div class="title">
+                                                                    <p>心岸烘焙28元代金券</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="" class="a-description">
+                                                                <div class="description">
+                                                                    <p>鼎城花园店28元代金券！节假日通用，提供免费WiFi！</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="price-area clearfix">
+                                                            <a href="" class="price">
+                                                                <span class="price-sign">¥</span>18
+                                                            </a>
+                                                            <span class="or-price">
+																	<span class="price-sign">¥</span>
+                                                            <span class="or-price-text">28</span>
+                                                            </span>
+                                                            <span class="sale">已售1380</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="s-index-col">
+                                                    <div class="shopping-item s-opacity-blank8 nuomi-item">
+                                                        <div style="height: 164.32px; overflow: hidden;">
+                                                            <a href="" class="img-area">
+                                                                <img src="images/xiaofeiyang1.jpg" style="width: 273px; height: 164.32px;" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <a href="" class="a-title">
+                                                                <div class="title">
+                                                                    <p>小肥羊100元代金券</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="" class="a-description">
+                                                                <div class="description">
+                                                                    <p>100元代金券！可叠加使用！提供免费WiFi！</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="price-area clearfix">
+                                                            <a href="" class="price">
+                                                                <span class="price-sign">¥</span>67
+                                                            </a>
+                                                            <span class="or-price">
+																	<span class="price-sign">¥</span>
+                                                            <span class="or-price-text">100</span>
+                                                            </span>
+                                                            <span class="sale">已售1814</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="shopping-item s-opacity-blank8 nuomi-item">
+                                                        <div style="height: 164.32px; overflow: hidden;">
+                                                            <a href="" class="img-area">
+                                                                <img src="images/xinan.jpg" style="width: 273px; height: 164.32px;" />
+                                                                <div class="tag">免预约</div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <a href="" class="a-title">
+                                                                <div class="title">
+                                                                    <p>心岸烘焙28元代金券</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="" class="a-description">
+                                                                <div class="description">
+                                                                    <p>鼎城花园店28元代金券！节假日通用，提供免费WiFi！</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="price-area clearfix">
+                                                            <a href="" class="price">
+                                                                <span class="price-sign">¥</span>18
+                                                            </a>
+                                                            <span class="or-price">
+																	<span class="price-sign">¥</span>
+                                                            <span class="or-price-text">28</span>
+                                                            </span>
+                                                            <span class="sale">已售1380</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfloat"></div>
+                        </div>
+                        <!--右侧返回栏-->
+                        <div class="top-feed">
+                            <div class="to-top" id="to_top">
+                                <div class="icon-mask">
+                                    <div class="text">返回顶部</div>
+                                </div>
+                                <span class="icon"></span>
+                            </div>
+                            <div class="feed-back s-feedback">
+                                <div class="icon-mask">
+                                    <div class="text">意见反馈</div>
+                                </div>
+                                <span class="icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--脚部-->
+                <div id="bottom_container" class="s-bottom-ctner">
+                    <a href="" class="sethome">设为首页</a>
+                    <span class="copyright-text">&copy;2015Baidu </span>
+                    <span class="copyright-text">							
+							<a href="">使用百度前必读</a>
+                    		<a href="">意见反馈</a> 
+                    		<span>京ICP证030173号</span>
+                    <img src="images/copy_rignt_24.png?__inline" width="13" height="16" />
+                    </span>
+                </div>
+            </div>
+            <!--左侧音乐电台部分-->
+            <div class="s-newmusic s-isindex-wrap" id="s_mancard_newmusic">
+                <div class="p-panel clearfix" id="p_panel" style="width: 22px;">
+                    <div class="p-sidebar js-player-open">
+                        <div class="quickFlip">
+                            <span class="bar-text">音乐电台</span>
+                        </div>
+                    </div>
+                    <div class="p-main-wrapper">
+                    </div>
+                    <div class="bg"></div>
+                    <div class="bg-mask"></div>
+                    <div class="bg-base"></div>
+                </div>
+                <div class="p-panel-bottom"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
