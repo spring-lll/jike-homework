@@ -1,0 +1,245 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	overflow-y: auto;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	display: block;
+}
+body {
+	font: 12px arial;
+}
+body,
+p,
+form {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body,
+form {
+	position: relative;
+}
+/*用min-height与min-width实现小分辨率的适应*/
+
+#wrapper {
+	min-width: 810px;
+	height: 100%;
+	min-height: 600px;
+	position: relative;
+}
+#head {
+	position: relative;
+	padding-bottom: 0;
+	height: 100%;
+	min-height: 600px;
+	text-align: center;
+}
+#head .head-wrapper {
+	height: 100%
+}
+.s-form {
+	position: relative;
+	top: 38.2%;
+}
+.s-form-wrapper {
+	position: relative;
+	top: -191px;
+}
+/*设计右上角部分样式*/
+
+#u {
+	z-index: 2;
+	color: white;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 19px 0 5px 0;
+	padding: 0 96px 0 0
+}
+#u a.mnav,
+#u a.mnav:visited {
+	float: left;
+	color: #333;
+	font-weight: bold;
+	line-height: 24px;
+	margin-left: 20px;
+	font-size: 13px;
+	text-decoration: underline
+}
+#u a.lb,
+#u a.lb:visited {
+	display: inline-block;
+	float: left;
+	color: #333;
+	font-size: 13px;
+	line-height: 24px;
+	margin-left: 20px;
+	text-decoration: underline
+}
+#u a.bri,
+#u a.bri:visited {
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	width: 60px;
+	height: 23px;
+	float: left;
+	color: white;
+	background: #38f;
+	line-height: 24px;
+	font-size: 13px;
+	text-align: center;
+	overflow: hidden;
+	border-bottom: 1px solid #38f;
+	margin-left: 19px;
+	margin-right: 2px;
+	text-decoration: none;
+}
+#u a:hover {
+	color: #00c;
+}
+/*设计中间部分样式*/
+
+#form {
+	margin: 22px auto 0;
+	width: 641px;
+	text-align: left;
+	z-index: 100;
+	position: relative;
+}
+img {
+	border: 0;
+}
+#m {
+	position: relative;
+	width: 720px;
+	margin: 0 auto;
+}
+.qw {
+	position: relative;
+}
+.s-ipt-wr {
+	border: 1px solid #b6b6b6;
+	border-color: #7b7b7b #b6b6b6 #b6b6b6 #7b7b7b;
+	background: #fff;
+	display: inline-block;
+	vertical-align: top;
+	width: 539px;
+	margin-right: 0;
+	border-right-width: 0;
+	border-color: #b8b8b8 transparent #ccc #b8b8b8;
+	overflow: hidden;
+	height: 34px;
+}
+.s-ipt-wr:hover {
+	border: 1px solid #3385FF;
+	border-right-width: 0;
+}
+.s-ipt {
+	width: 500px;
+	height: 22px;
+	font: 16px/18px arial;
+	margin: 6px 0 0 7px;
+	padding: 0;
+	background: transparent;
+	border: 0;
+	outline: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+#kw {
+	position: relative;
+}
+/*百度一下按钮的外层*/
+
+.s-btn-wr {
+	width: 97px;
+	height: 34px;
+	z-index: 0;
+}
+.s-btn-wr {
+	width: auto;
+	height: auto;
+	border-bottom: 1px solid transparent;
+	vertical-align: top;
+	display: inline-block;
+	float: left;
+	box-sizing: border-box;
+	position: absolute;
+}
+.s-btn {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: #3385ff;
+	border: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	color: #fff;
+	cursor: pointer;
+	font-size: 15px;
+	height: 36px;
+	outline: none;
+	letter-spacing: 1px;
+	vertical-align: top;
+	width: 99px;
+}
+/*脚部样式*/
+
+#ftCon {
+	height: 100px;
+	position: absolute;
+	bottom: 44px;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	z-index: 0;
+	overflow: hidden;
+}
+#ftConw {
+	width: 720px;
+	margin: 0 auto
+}
+p {
+	display: block;
+}
+#ph {
+	margin: 16px 0 5px;
+}
+#ph a {
+	margin: 0 10px;
+}
+#seth {
+	display: none;
+}
+a {
+	color: #00c;
+}
+a:-webkit-any-link {
+	text-decoration: underline;
+	cursor: auto;
+}
+#cp,
+#cp a {
+	color: #666;
+}
+#cp .icon {
+	width: 14px;
+	height: 17px;
+	display: inline-block;
+	overflow: hidden;
+	background: url(../images/icons_45de3f02.png);
+	background-position: -600px -96px;
+	position: relative;
+	top: 3px;
+}

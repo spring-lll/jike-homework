@@ -1,0 +1,39 @@
+body {margin-bottom: 2px;}
+body,td,th {font-family: ËÎÌו;font-size: 12px;line-height:18px}
+a:link {color: #0000CC;}
+a:visited {color: #0000CC;}
+a:hover {color: #0000cc;}
+a:active {	color: #0000CC;}
+.f12{font-size:12px;}
+.f12l18{font-size:12px;line-height:18px}
+.f14{font-size:14px;}
+.f14b{font-size:14px;font-weight:bold;}
+.bgblue{background-image: url(../../img/jiao.gif); background-repeat:no-repeat;background-position:top right; background-color:#D9E5F5;padding-left:10px}
+.boxblue{border:1px solid #D9E5F5;padding:10px}
+.bgyellow{background-image: url(../../img/jiao.gif); background-repeat:no-repeat;background-position:top right; background-color:#F1DEB4;padding-left:10px}
+.boxyellow{border:1px solid #F1DEB4;padding:10px}
+.bgviolet{background-image: url(../../img/jiao.gif); background-repeat:no-repeat;background-position:top right; background-color:#E0D8F0;padding-left:10px}
+.boxviolet{border:1px solid #E0D8F0;padding:10px}
+.bggreen{background-image: url(../../img/jiao.gif); background-repeat:no-repeat;background-position:top right; background-color:#DCE8BA;padding-left:10px}
+.boxgreen{border:1px solid #DCE8BA;padding:10px}
+.lh1{line-height:25px}
+
+.dwall{ width:760px;}
+.dwleft{ width:155px;float:left;text-align:left; line-height:20px}
+.dwri_yellow{ width:582px;float:left;text-align:left;border-left:1px solid #F1DEB4; padding-left:22px}
+.dwri_bule{ width:582px;float:left;text-align:left;border-left:1px solid #D9E5F5; padding-left:22px}
+.dwri_violet{ width:582px;float:left;text-align:left;border-left:1px solid #E0D8F0; padding-left:22px}
+.dwri_green{ width:582px;float:left;text-align:left;border-left:1px solid #DCE8BA; padding-left:22px}
+
+.padL_1{padding-left:38px}
+.padL_2{padding-left:13px}
+.padL_3{padding-left:25px}
+.padT_1{padding-top:12px}
+.marT_1{ margin-top:12px}
+.t_bg_yellow{background-image: url(../../img/ico_01.gif); background-repeat:no-repeat;background-position:left top;padding-left:13px;font-weight:bold}
+.t_bg_violet{background-image: url(../../img/ico_01.gif); background-repeat:no-repeat;background-position:left top;padding-left:13px;font-weight:bold}
+.t_bg_green{background-image: url(../../img/ico_01.gif); background-repeat:no-repeat;background-position:left top;padding-left:13px;font-weight:bold}
+.l_box_yellow{width:86px;border:1px solid #FAD467; padding-left:13px;padding-top:7px;padding-bottom:7px}
+.l_box_violet{width:86px;border:1px solid #E0D8F0; padding-left:13px;padding-top:7px;padding-bottom:7px}
+.l_box_green{width:86px;border:1px solid #DCE8BA; padding-left:13px;padding-top:7px;padding-bottom:7px}
+.f_col_1{color:#4B4B4B}
