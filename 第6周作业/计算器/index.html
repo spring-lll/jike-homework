@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>计算器</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/new.js"></script>
+
+	</head>
+
+	<body>
+		<table>
+			<tr>
+				<td colspan="5">
+					<p id="screenShow"></p>
+					<p id="screenShow1"></p>
+				</td>
+			</tr>
+			<tr>
+				<td id="tds">
+					<input type="button" value="(" name="btnLeftBracket" id="btnLeftBracket" onclick="calFunc('(')" />
+				</td>
+				<td>
+					<input type="button" value=")" name="btnRightBracket" id="btnRightBracket" onclick="calFunc(')')" />
+				</td>
+				<td colspan="2">
+					<input type="button" value="BackSpace" name="btnBackSpace" id="btnBackSpace" onclick="calFunc('backSpace')" />
+				</td>
+				<td>
+					<input type="button" value="AC" name="btnAc" id="btnAc" onclick="calFunc('ac')" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" value="7" name="btnNo7" id="btnNo7" onclick="calFunc('7')" />
+				</td>
+				<td>
+					<input type="button" value="8" name="btnNo8" id="btnNo8" onclick="calFunc('8')" />
+				</td>
+				<td>
+					<input type="button" value="9" name="btnNo9" id="btnNo9" onclick="calFunc('9')" />
+				</td>
+				<td>
+					<input type="button" value="+" name="btnPlus" id="btnPlus" onclick="calFunc('+')" />
+				</td>
+				<td>
+					<input type="button" value="sin" name="btnSin" id="btnSin" onclick="calFunc('sin(')" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" value="4" name="btnNo4" id="btnNo4" onclick="calFunc('4')" />
+				</td>
+				<td>
+					<input type="button" value="5" name="btnNo5" id="btnNo5" onclick="calFunc('5')" />
+				</td>
+				<td>
+					<input type="button" value="6" name="btnNo6" id="btnNo6" onclick="calFunc('6')" />
+				</td>
+				<td>
+					<input type="button" value="-" name="btnMinus" id="btnMinus" onclick="calFunc('-')" />
+				</td>
+				<td>
+					<input type="button" value="cos" name="btnCos" id="btnCos" onclick="calFunc('cos(')" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" value="1" name="btnNo1" id="btnNo1" onclick="calFunc('1')" />
+				</td>
+				<td>
+					<input type="button" value="2" name="btnNo2" id="btnNo2" onclick="calFunc('2')" />
+				</td>
+				<td>
+					<input type="button" value="3" name="btnNo3" id="btnNo3" onclick="calFunc('3')" />
+				</td>
+				<td>
+					<input type="button" value="*" name="btnMul" id="btnMul" onclick="calFunc('*')" />
+				</td>
+				<td>
+					<input type="button" value="tan" name="btnTan" id="btnTan" onclick="calFunc('tan(')" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" value="." name="btnDot" id="btnDot" onclick="calFunc('.')" />
+				</td>
+				<td>
+					<input type="button" value="0" name="btnNo0" id="btnNo0" onclick="calFunc('0')" />
+				</td>
+				<td>
+					<input type="button" value="+/-" name="btnSign" id="btnSign" onclick="calFunc('sign')" />
+				</td>
+				<td>
+					<input type="button" value="/" name="btnDiv" id="btnDiv" onclick="calFunc('/')" />
+				</td>
+				<td>
+					<input type="button" value="=" name="btnEqual" id="btnEqual" onclick="calFunc('result')" />
+				</td>
+			</tr>
+		</table>
+	</body>
+
+</html>

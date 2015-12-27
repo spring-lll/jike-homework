@@ -1,0 +1,35 @@
+ <script type="text/javascript" >
+        function change(btn) {
+            var btn = document.getElementsByName("button");
+            var times = 0;
+            if (btn.onclicked) {
+                times++;
+                if (times % 2 == 0) {
+                    btn.style.background = "red";
+                }
+                if (times % 2 == 1) {
+                    btn.style.bac1ground = "white";
+                }
+
+            }
+        }
+    </script>
+    
+
+<html>
+<head>
+
+    <script type="text/javascript">
+        var times = 0;
+        function change(btn) {
+            btn.style.background = times % 2 == 0 ? 'red' : 'white';
+            times++;
+        }
+    </script>
+
+</head>
+<body>
+    <input name="button1" type="button" value="点击试试" onclick="change(this)" />
+</body>
+</html>
+

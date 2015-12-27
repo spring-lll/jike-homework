@@ -1,0 +1,32 @@
+<html>
+	<meta charset="utf-8" />
+
+	<head>
+		<title>让浏览者自己选择网页的文字颜色</title>
+		<script language="javascript">
+			 <!--
+			function chColor(c) {
+					//					document.body.style.color = c;
+					var objs = document.getElementsByTagName("div");
+					console.log(objs);
+					for (var i = 0; i < objs.length; i++) {
+						console.log(objs[i]);
+						objs[i].style.color = "red"
+					}
+				}
+				//-->
+		</script>
+	</head>
+
+	<body>
+		<input name="c" type="radio" value="#000000" onClick="chColor(this.value)" checked>黑
+		<input name="c" type="radio" value="#0000FF" onClick="chColor(this.value)">蓝
+		<input name="c" type="radio" value="#FF0000" onClick="chColor(this.value)">红
+		<br> 选择一种颜色，本页所有文字会改变颜色哦!
+		<div>123</div>
+		<div style="color: black;">342</div>
+		<div style="color: black;">fdafd</div>
+		<button onclick="chColor()">click</button>
+	</body>
+
+</html>
