@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    function Banana() {
+        this.price = '$1.5'
+    }
+    function Apple() {
+        this.price = '$1.2'
+    }
+    function Orange() {
+        this.price = '$2.2'
+    }
+    // 静态工厂类
+    function Fruit() {}
+    Fruit.factory = function(type) {
+        if (!window[type]) {
+            return
+        }
+        var fruit = new window[type]
+        return fruit
+    }
+    // 制造不同的水果
+    var banana = Fruit.factory('Banana')
+    var apple  = Fruit.factory('Apple')
+    var orange = Fruit.factory('Orange')
+</script>
+</body>
+</html>

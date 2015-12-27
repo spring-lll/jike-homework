@@ -1,0 +1,103 @@
+//加注释
+$(function(){
+    // //搜索框效果，使用单例模式
+    var searchBar={
+        init: function(argument){
+            var me =this;
+            me.render(argument);
+            me.bind();
+        },
+        render: function (param) {
+            var me=this;
+            var btns=document.getElementById(param);
+            me.btn=$(btns);
+        },
+        bind:function(){
+            var me=this;
+            me.btn.focus(function(){
+                $(this).css({
+                    'border': '1px solid #38f',
+                    'border-right': '0'
+                });
+            });
+            me.btn.blur(function(){
+                $(this).css({
+                    'border': '1px solid #d8d8d8',
+                    'border-right': '0'
+                });
+            });
+        }
+    };
+    searchBar.init('kw');
+//    搜索框效果结束
+
+//    click效果
+    var btnClick={
+        init: function(arg,arg1,arg2){
+            var me =this;
+            me.render(arg);
+            me.bind(arg1,arg2);
+        },
+        render: function (param) {
+            var me=this;
+            var btns=document.getElementById(param);
+            me.btn=$(btns);
+        },
+        bind:function(param,param1){
+            var me=this;
+            var btns=document.getElementsByClassName(param);
+            var btns1=document.getElementById(param1);
+            $(".s-menu-item").each(function(index) {
+                $('.s-menu-item').bind("click", function() {
+                    $('.s-menu-item').removeClass('current');
+                    $(this).addClass('current');
+                    return false;
+                });
+            });
+            me.btn.click(function(){
+                $(btns).css('display', 'none');
+                $(btns1).css('display', 'block');
+            });
+        }
+    };
+    //btnClick.init('s_menu_mine','s-content','s_content_100');
+    //btnClick.init('s_menus_wrapper span:first-child','s-content','s_content_2');
+    //btnClick.init('s_menus_wrapper span:nth-child(2)','s-content','s_content_1');
+    btnClick.init('s_menus_wrapper span:nth-child(3)','s-content','s_content_15');
+    btnClick.init('s_menus_wrapper span:last-child','s-content','s_content_5');
+//    click效果结束
+
+    //hover效果1 （用户+设置两块效果）
+    //var btnMouse={
+    //    init: function(argument){
+    //        var me =this;
+    //        me.render(argument);
+    //        me.bind();
+    //    },
+    //    render: function (param) {
+    //        var me=this;
+    //        var btns=document.getElementById(param);
+    //        me.btn=$(btns);
+    //    },
+    //    bind:function(param,param1){
+    //        var me=this;
+    //        $("#s_username_top").mouseover(function() {
+    //            $("#s_user_name_menu").css("display", "block");
+    //        });
+    //        $("#s_user_name_menu").mouseover(function() {
+    //            $("#s_user_name_menu a").hover(function() {
+    //                $(this).css("background", "#38f");
+    //                $(this).css("color", "#fff");
+    //            }, function() {
+    //                $(this).css("background", "#fff");
+    //                $(this).css("color", "#555");
+    //            });
+    //        });
+    //        $("#s_user_name_menu").mouseleave(function() {
+    //            $("#s_user_name_menu").css("display", "none");
+    //        });
+    //    }
+    //};
+    //btnMouse.init('kw');
+
+});

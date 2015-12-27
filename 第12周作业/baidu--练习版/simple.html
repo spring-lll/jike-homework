@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        var factory={};
+//        factory.prototype={
+//            chanyifu:function(){
+//                alert("factory show");
+//            }
+//        }
+        factory.chanyifu=function(argument){
+            this.gongren=40;
+            alert("有"+this.gongren+"个工人");
+        }
+        factory.chanxie=function(){
+            alert("产鞋子");
+        }
+        factory.yunshu=function(){
+            alert("运输");
+        }
+        factory.changzhang=function(param){
+            return new factory[param]();
+        }
+
+        var me=factory.changzhang('chanyifu');
+        factory.chanyifu= function () {
+            alert("新的产衣服线");
+        }
+        var me=factory.changzhang('chanyifu');
+        var me1=factory.changzhang('yunshu');
+
+    </script>
+</body>
+</html>
